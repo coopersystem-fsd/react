@@ -1,0 +1,10 @@
+version: '3'
+services:
+    laravelapi-react:
+        build:
+          context: .
+        user: ${DOCKER_UID}
+        volumes:
+            - ./:/var/www
+        ports:
+            - 3000:3000
